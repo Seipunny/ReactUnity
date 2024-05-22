@@ -17,28 +17,5 @@
       }
     </script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-      window.onload = function() {
-          // Инициализация Web App SDK
-          Telegram.WebApp.ready();
-
-          // Получение данных о пользователе
-          var initDataUnsafe = Telegram.WebApp.initDataUnsafe;
-          var userId = initDataUnsafe.user.id;
-
-          // Вывод user ID в консоль (можно передать в игру)
-          console.log('User ID: ' + userId);
-
-          // Пример передачи user ID в вашу игру
-          // Допустим, у вас есть функция initGame(userId)
-          initGame(userId);
-      };
-
-      function initGame(userId) {
-          // Логика инициализации игры с использованием user ID
-          console.log('Initializing game with user ID: ' + userId);
-          // Ваша логика игры
-      }
-  </script>
   </body>
 </html>
